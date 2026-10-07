@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color: rgb(184, 6, 6);
-                color: black;
-                text-align: center;
-                max-width: ;
-                margin: 0 auto;
-                border: 5px solid rgb(80, 4, 4);
-                padding: 16px;
-                                                                                                     
-            }
-            main{
-                background-color: rgb(226, 36, 36);
-                color: black;
-                text-align: center;
-                max-width: ;
-                margin: 0 auto;
-                border: 5px solid rgb(80, 4, 4);
-                padding: 16px;
-                display: flex;
 
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: rgb(184, 6, 6);
+            color: black;
+            text-align: center;
+            max-width: ;
+            margin: 0 auto;
+            border: 5px solid rgb(80, 4, 4);
+            padding: 16px;
 
-            img{
-                width: 55px;
-                height: 50px;
-            }
-            .artigo-autor{
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Café com a caichinhos e paz</h1>
-            <p> seja bem vinda ao seu novo saite comforto; onde vamos falar sobre varios assuntos.</p>
-        </header>
+        }
+
+        main {
+            background-color: rgb(226, 36, 36);
+            color: black;
+            text-align: center;
+            max-width: ;
+            margin: 0 auto;
+            border: 5px solid rgb(80, 4, 4);
+            padding: 16px;
+            display: flex;
+
+        }
+
+        img {
+            width: 55px;
+            height: 50px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Café com a caichinhos e paz</h1>
+        <p> seja bem vinda ao seu novo saite comforto; onde vamos falar sobre varios assuntos.</p>
+    </header>
     <main>
-        <img src="imagem-blog" alt="Desenho detalhado de uma xícara de chá clássica com pires, ilustrada sobre um fundo de papel bege claro. A xícara possui corpo em tom vermelho vibrante decorado com traços e ornamentos em dourado reluzente, além de borda e alça curvada também douradas. O pires combina com o conjunto, apresentando bordas trabalhadas em dourado e centro vermelho. Linhas finas de esboço a lápis são visíveis ao redor da ilustração.">
+        <img src="imagem-blog"
+            alt="Desenho detalhado de uma xícara de chá clássica com pires, ilustrada sobre um fundo de papel bege claro. A xícara possui corpo em tom vermelho vibrante decorado com traços e ornamentos em dourado reluzente, além de borda e alça curvada também douradas. O pires combina com o conjunto, apresentando bordas trabalhadas em dourado e centro vermelho. Linhas finas de esboço a lápis são visíveis ao redor da ilustração.">
         <div>
             <h2>post da caichinhos</h2>
-        <p>Ola minhas caichinhos sejam bemvindas ao seu novo saite conforto</p>
-        Café com a caichinhos e paz
-        <p class="artigo-autor"> por:Glenda maccari</p>
-        <button>✨ <span>0</span></button>
-        
-    </div>
+            <p>Ola minhas caichinhos sejam bemvindas ao seu novo saite conforto</p>
+            Café com a caichinhos e paz
+            <p class="artigo-autor"> por:Glenda maccari</p>
+            <button>✨ <span>0</span></button>
+            <button>🪮<span>0</span></button>
+
+        </div>
     </main>
-     </body>
-     <script>
-const botoes = document.querySelectorAll("main button");
-botoes.forEach(function)(botoes){}
-botaos.addEventListener("click", botoesClicado);
-function botoesClicado() {
-console.log("fui clicado");
-let texto = botoes.querySelector("span");
-texto.textContent++;
-}
+</body>
+<script>
+    const botoes = document.querySelectorAll("main button");
+    botoes.forEach(function(botao){ 
+    botao.addEventListener("click", botoesClicado);
+    function botoesClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+});
 
 </script>
-    
